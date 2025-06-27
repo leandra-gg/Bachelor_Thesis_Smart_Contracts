@@ -1,13 +1,14 @@
-# Sample Hardhat Project
+# Smart Contracts – Bachelor's Thesis
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+This repository contains the Solidity smart contracts used in the prototype system for my Bachelor's thesis.
 
-Try running some of the following tasks:
+## Contracts
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
-```
+- `AuditTrail.sol`: logs hashes and metadata for each processing step.
+- `PublicKeyRegistry.sol`: registers and verifies machine TLS certificates and public keys.
+
+The contracts are deployed to the Optimism Sepolia testnet and interact with four TEE-enabled machines and a central orchestrator.
+
+## Note
+
+This project is for academic use only and not intended for production.
